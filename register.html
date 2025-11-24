@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація — Яценко Іван</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="./scripts/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Форма реєстрації</h1>
+    <nav><a href="index.html">На головну</a></nav>
+  </header>
+
+  <main style="width:min(600px,90%);margin:auto;">
+    <form id="registerForm" class="card">
+      <label for="fullname">ПІБ:</label><br>
+      <input type="text" id="fullname" placeholder="Іван Іванов" required><br><br>
+
+      <label for="bio">Про себе:</label><br>
+      <textarea id="bio" rows="4" cols="40" placeholder="Розкажіть про себе..."></textarea><br><br>
+
+      <label>Стать:</label><br>
+      <label><input type="radio" name="gender" value="male" checked> Чоловіча</label>
+      <label><input type="radio" name="gender" value="female"> Жіноча</label><br><br>
+
+      <label for="country">Країна:</label>
+      <select id="country">
+        <option selected>Україна</option>
+        <option>Польща</option>
+        <option>Німеччина</option>
+      </select><br><br>
+
+      <label for="birthdate">Дата народження:</label><br>
+      <input type="date" id="birthdate"><br><br>
+
+      <label><input type="checkbox" id="terms" required> Погоджуюсь з умовами</label><br><br>
+
+      <button type="submit">Зареєструватися</button>
+      <button type="reset">Очистити</button>
+    </form>
+
+    <p id="registerMessage" style="text-align:center;margin-top:16px;"></p>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; 2025 — ЛР5, Стилізація вебсторінки за допомогою CSS</small>
+  </footer>
+</body>
+</html>

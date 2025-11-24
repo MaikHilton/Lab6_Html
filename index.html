@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk" data-owner="Яценко Іван">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ЛР6 — Яценко Іван, ІН-31-1</title>
+  <meta name="description" content="Лабораторна робота №6 - Адаптивний макет (Grid + Flexbox)" />
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <h1>Яценко Іван — ІН-31-1</h1>
+      <p class="subtitle">Лабораторна робота №6 — CSS Grid & Flexbox</p>
+    </div>
+    <nav aria-label="Головне меню">
+      <ul class="menu">
+        <li><a href="#about">Про мене</a></li>
+        <li><a href="#hobbies">Хобі</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Registration</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article id="about" class="card">
+      <h2>Про мене</h2>
+      <figure>
+        <img 
+          src="./assets/img/avatar.png" 
+          srcset="./assets/img/avatar.png 320w, ./assets/img/avatar.png 800w"
+          sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 300px"
+          alt="Фото: Яценко Іван" 
+          title="Яценко Іван — студент групи ІН-31-1" 
+          loading="lazy">
+      </figure>
+      <p>Я — студент групи ІН-31-1, навчаюсь на факультеті комп’ютерних наук. У цій лабораторній роботі я реалізував адаптивний макет.</p>
+    </article>
+
+    <section id="hobbies" class="card">
+      <h2>Мої хобі</h2>
+      <ul>
+        <li>Програмування (Web, SQL)</li>
+        <li>Читання науково-фантастичної літератури</li>
+        <li>Комп'ютерні ігри (Strategies)</li>
+      </ul>
+    </section>
+
+    <aside id="extra" class="card">
+      <h3>Цікаві факти</h3>
+      <p>Мій улюблений інструмент веб-розробника — DevTools.</p>
+      <p>Соціальні мережі: 
+        <a href="https://t.me/IvanYat" target="_blank">Telegram</a>
+      </p>
+    </aside>
+  </main>
+
+  <footer id="contacts" class="site-footer">
+    <p>Контакт: <a href="mailto:yatsenko.ivan@student.sumdu.edu.ua">yatsenko.ivan@student.sumdu.edu.ua</a></p>
+    <small>&copy; 2025 — ЛР6, Адаптивність та Макетування</small>
+  </footer>
+</body>
+</html>
